@@ -1,0 +1,16 @@
+<script>
+  let vasya = { name: "Вася", age: 25 };
+  let petya = { name: "Петя", age: 30 };
+  let masha = { name: "Маша", age: 28 };
+
+  let arr = [ vasya, petya, masha ];
+
+  function averageAge(arr) {
+    return arr.map(user => user.age).reduce((sum, current) => sum + current, 0)
+     / arr.length
+  }
+  console.log ( averageAge(arr) )
+</script>
+
+<!-- return users.reduce((prev, user) => prev + user.age, 0) / users.length -->
+<!-- возвращает среднее значение возрастов  -->

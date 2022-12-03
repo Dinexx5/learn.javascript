@@ -1,0 +1,16 @@
+<script>
+  function filterRangeInPlace(arr, a, b) {
+
+      for (let i = 0; i < arr.length; i++) {
+        let val = arr[i];
+
+        if (val < a || val > b) {
+          arr.splice(i, 1);
+          i--;
+        }
+      }
+  }
+</script>
+
+<!--  фильтрует значения в массиве, удаляет значения вне диапазона [a;b] .
+ничего не возвращается, старый массив меняется. -->

@@ -1,0 +1,14 @@
+<script>
+function ask (question, yes, no) {
+  if (confirm(question)){
+    yes()
+  } else {
+    no()
+  }
+}
+ask(
+'Vi soglasni?',
+()=> {alert ('vi soglasilis')},
+()=> {alert ('vi otkazalis')}
+)
+</script>

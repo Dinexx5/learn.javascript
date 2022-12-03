@@ -1,0 +1,11 @@
+<script>
+  function readNumber(num) {
+ do {
+   num = prompt('Vvedite chislo', '');
+ } while ( !isFinite(num) );
+
+ if (num === '' || num === null) {
+   return null;
+ } return +num;
+ }
+</script>

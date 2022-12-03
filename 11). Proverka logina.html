@@ -1,0 +1,23 @@
+<script>
+
+'use strict'
+let login = prompt('Vvedite login', '');
+
+if (login == 'Admin'){
+
+  let parol = prompt('Vvedite parol','');
+
+  if (parol == 'Admin'){
+    alert('Dobro pozhalovat, admin')
+  } else if (parol == null || parol == ''){
+    alert('Otmeneno')
+  } else {
+    alert('Neverniy parol')
+  }
+
+} else if (login == null || login == ''){
+  alert('Otmeneno')
+} else {
+  alert('Takogo logina ne suchestvuet')
+}
+</script>

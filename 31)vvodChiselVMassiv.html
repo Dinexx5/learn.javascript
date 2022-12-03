@@ -1,0 +1,24 @@
+<script>
+function sumInput() {
+
+  let arr = [];
+
+  while (true) {
+      let numbers = prompt('Vvedite chislo', '');
+      if ( numbers === null || numbers === "" || !isFinite(numbers) )
+      break;
+      arr.push(+numbers);
+ }
+
+  let sum = 0;
+
+  for (let num of arr) {
+  sum += num;
+}
+  return sum;
+}
+alert ( sumInput() )
+</script>
+
+<!-- принимает числа пока пользователь не прекратит ввод, загоняет их в массив,
+возвращает сумму элекментов массива. -->

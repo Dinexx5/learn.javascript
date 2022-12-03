@@ -1,0 +1,13 @@
+<script>
+function truncate(str, maxlength) {
+ let newString = str.slice(0, maxlength -1) + "…"
+ if (str.length > maxlength) {
+   return newString
+ } else {
+   return str
+ }
+}
+</script>
+
+<!-- проверяет количество символов в строке. если их больше, чем maxLength,
+укорачивает строку до maxLenth и добавляет в конец символ … -->
